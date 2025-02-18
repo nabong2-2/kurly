@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마켓컬리 리디자인</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./script/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="contents">
+                <p class="header_txt_move"></p>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_header">
+            <div class="contents">
+                <div class="top">
+                    <h1><a href="#"><img src="./images/logo.png" alt="로고"></a></h1>
+                    <div class="select_market">
+                        <a href="#">마켓컬리</a>
+                        <img src="./images/maeket_line.png" alt="">
+                        <a href="#">뷰티컬리</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <nav>
+                        <img src="./images/hambuger.png" alt="">
+                        <a href="#">신선제품</a>
+                        <a href="#" class="star_delivery"><img src="./images/deliver.png" alt="배달 이모티콘">샛별배송</a>
+                        <a href="#">알뜰쇼핑</a>
+                        <a href="#">베스트</a>
+                        <a href="#">신상품</a>
+                        <a href="#">맞춤쇼핑</a>
+                    </nav>
+                    <div class="customer_service">
+                        <form action="#">
+                            <input type="text" placeholder="어떤제품을 찾으시나요?">
+                            <button><img src="./images/search.png" alt=""></button>
+                        </form>
+                        <a href="#"><img src="./images/heart.png" alt=""></a>
+                        <a href="#"><img src="./images/cart.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 1. main 배너 -->
+        <div class="swiper main_bnr">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bnr1"><img src="./images/main1.jpg" alt=""></div>
+                <div class="swiper-slide bnr2"><img src="./images/main2.jpg" alt=""></div>
+                <div class="swiper-slide bnr3"><img src="./images/main3.jpg" alt=""></div>
+                <div class="swiper-slide bnr3"><img src="./images/main2.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 2. -->
+        <div class="container popular_product_wrap">
+            <div class="contents">
+                <div class="sub_title">
+                    <a href="#">
+                        <span class="category_title">실시간 인기 상품</span>
+                        <img src="./images/title_arrow.png" alt="더보기">
+                    </a>
+                </div>
+                <div class="menu_list">
+                    <a href="#" class="menu_item_bold">간펀식</a>
+                    <a href="#">간식</a>
+                    <a href="#">유제품</a>
+                    <a href="#">베이커리</a>
+                    <a href="#">건강식품</a>
+                </div>
+                <!-- 스와이퍼 / 슬라이드 1개씩 넘어가게 하기? 부모에 overflow hidden -->
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

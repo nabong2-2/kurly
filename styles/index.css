@@ -1,0 +1,162 @@
+body > * {margin-bottom: 120px;}
+/* 헤더 */
+header {
+    background-color: aqua;
+    margin-bottom: 25px;
+}
+header .top_header {
+    background-color: #EAE7F2;
+    height: 35px; width: 100%;
+}
+header .top_header .contents {
+    max-width: 1280px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+
+}
+header .top_header .header_txt_move {
+    font-size: 0.69rem; line-height: 35px;
+    letter-spacing: 0.18rem;
+}
+header .top_header ul {
+    display: flex;
+}
+header .top_header ul li {margin-right: 20px;}
+header .top_header ul li a {
+    font-size: 0.69rem; line-height: 35px;
+}
+header .bottom_header {
+    background-color: yellow;
+    height: 99px;
+    width: 100%;
+}
+header .bottom_header .contents {
+    padding-top: 10px;
+    max-width: 1280px; height: 100%; margin: 0 auto;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+header .bottom_header .contents .top {
+    background-color: lightcoral;
+    display: flex; align-items: center;
+}
+header .bottom_header .contents .top h1 {
+    margin-right: 30px;
+}
+header .bottom_header .contents .top h1 > a {}
+header .bottom_header .contents .top h1 > a img {}
+header .bottom_header .contents .top h1 > a img {}
+header .bottom_header .contents .top .select_market {
+    display: flex; align-items: center;
+}
+header .bottom_header .contents .top .select_market a {}
+header .bottom_header .contents .top .select_market img {}
+header .bottom_header .contents .bottom {
+    background-color: cadetblue;
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+header .bottom_header .contents .bottom nav {
+    display: flex; align-items: center;
+}
+header .bottom_header .contents .bottom nav > * {
+    margin-right: 23px; font-size: 0.88rem;
+}
+header .bottom_header .contents .bottom nav > *:last-child {
+    margin-right: 0;
+}
+header .bottom_header .contents .bottom nav > img {}
+header .bottom_header .contents .bottom nav .star_delivery {
+    
+}
+header .bottom_header .contents .bottom nav .star_delivery img {
+    width: 18px; position: relative; top: 2px;
+}
+header .bottom_header .contents .bottom nav a {}
+header .bottom_header .contents .bottom .customer_service {
+    background-color: orange;    
+    display: flex; align-items: center;
+}
+header .bottom_header .contents .bottom .customer_service > * {
+    margin-right: 16px;
+}
+header .bottom_header .contents .bottom .customer_service form {
+    position: relative;
+}
+header .bottom_header .contents .bottom .customer_service form input {
+    width: 270px; height: 34px;
+    border-radius: 18px; border: 1px solid #8A8A8A;
+    padding: 0 17px;
+}
+header .bottom_header .contents .bottom .customer_service form input::placeholder {
+    font-size: 0.75rem; color: #8A8A8A;
+    position: relative; top: -2px;
+}
+header .bottom_header .contents .bottom .customer_service form button {
+}
+header .bottom_header .contents .bottom .customer_service form button img {
+    position: absolute; top: 7px; right: 20px;
+}
+header .bottom_header .contents .bottom .customer_service a {
+}
+header .bottom_header .contents .bottom .customer_service a:last-child {margin-right: 0;}
+header .bottom_header .contents .bottom .customer_service a img {}
+
+/* ==================================main */
+/* swiper */
+main {}
+main .main_bnr {
+    background-color: aqua;
+    overflow: hidden;
+    width: 100%; height: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    position: relative;
+    margin-top: 51px;
+
+}
+main .main_bnr .swiper-wrapper {
+    display: flex; width: 100%; align-items: center;
+    
+}
+main .main_bnr .swiper-wrapper .swiper-slide {
+    flex-shrink: 0; 
+    /* 슬라이드 크기 유지 */
+    width: auto; 
+    border-radius: 12px; overflow: hidden;
+}
+main .main_bnr .swiper-wrapper .swiper-slide img {
+    width: 100%; height: 100%; 
+    object-fit: cover;
+}
+main .main_bnr .swiper-button-prev,
+main .main_bnr .swiper-button-next {
+    top: 50%;
+    transform: translateY(-50%); right: 28%; background-color: white; display: block; position: absolute;
+    width: 50px; height: 50px; z-index: 998; 
+}
+main .main_bnr .swiper-button-next::after {
+    /* color: #EAE7F2; z-index: 999; */
+}
+main .main_bnr .swiper-button-prev {left: 28%;}
+/* pagination */
+main .main_bnr .swiper-pagination {
+    bottom: 11px; position: absolute;
+    height: 3px; width: 100%; 
+    display: flex; flex-flow: row nowrap; justify-content: center;
+}
+/* 개별 점 스타일 */
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-color: #ccc; /* 비활성 점 색상 (회색) */
+    opacity: 1; /* Swiper 기본 투명도 제거 */
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.swiper-pagination-bullet:last-child {margin-right: 0;}
+
+/* 현재 슬라이드 (활성화된 점) */
+.swiper-pagination-bullet-active {
+    background-color: #222;
+}
+/* 2. 실시간 인기 상품 */
