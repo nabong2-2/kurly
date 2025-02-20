@@ -36,3 +36,34 @@ const mainBnr = new Swiper(".main_bnr", {
         el: ".swiper-pagination",
     },
 });
+
+// item - swiper
+
+const itemSwiper = new Swiper('.items_wrap', {
+    spaceBetween: 25,
+    slidesPerView: 'auto',
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+})
+
+const dailySwiper = new Swiper('.daily_time_wrap', {
+    slidesPerView: 'auto',
+    spaceBetween: 23,
+    autoplay: {
+        delay: 300,
+        disableOnInteraction: false,
+    },
+})
+
+// 취향 저격 제품 swiper
+
+const shotSwiper = new Swiper('.shot_items_box', {
+    spaceBetween: 50,
+    slidesPerView: 'auto',
+    // autoplay: {
+    //     delay: 1000,
+    // }
+    centeredSlides: 0,
+})
