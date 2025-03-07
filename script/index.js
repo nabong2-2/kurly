@@ -21,8 +21,8 @@ const mainBnr = new Swiper(".main_bnr", {
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 45,
-    // loop: true,
-    loopAdditionalSlides: 3,
+    loop: true,
+    // loopAdditionalSlides: 3,
     initialSlide: 1,
     autoplay: {
         delay: 4000,
@@ -42,17 +42,19 @@ const mainBnr = new Swiper(".main_bnr", {
 const itemSwiper = new Swiper('.items_wrap', {
     spaceBetween: 25,
     slidesPerView: 'auto',
+    loop: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".items_wrap .swiper-button-next",
+        prevEl: ".items_wrap .swiper-button-prev",
     },
 })
 
 const dailySwiper = new Swiper('.daily_time_wrap', {
     slidesPerView: 'auto',
     spaceBetween: 23,
+    loop: true,
     autoplay: {
-        delay: 300,
+        delay: 2000,
         disableOnInteraction: false,
     },
 })
@@ -62,6 +64,7 @@ const dailySwiper = new Swiper('.daily_time_wrap', {
 const shotSwiper = new Swiper('.shot_items_box', {
     spaceBetween: 50,
     slidesPerView: 'auto',
+    loop: true,
     // autoplay: {
     //     delay: 1000,
     // }
