@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마켓컬리 리디자인</title>
+    <!-- 글꼴 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
@@ -56,13 +57,20 @@
         </div>
     </header>
     <main>
+        <!-- 0. 팝업 -->
+        <div class="main_popup">
+            <img src="./images/popup.jpg" alt="">
+            <span class="close">닫기</span>
+        </div>
         <!-- 1. main 배너 -->
         <div class="swiper main_bnr">
             <div class="swiper-wrapper">
                 <div class="swiper-slide bnr1"><img src="./images/main1.jpg" alt=""></div>
                 <div class="swiper-slide bnr2"><img src="./images/main2.jpg" alt=""></div>
                 <div class="swiper-slide bnr3"><img src="./images/main3.jpg" alt=""></div>
-                <div class="swiper-slide bnr3"><img src="./images/main2.jpg" alt=""></div>
+                <div class="swiper-slide bnr4"><img src="./images/main4.jpg" alt=""></div>
+                <div class="swiper-slide bnr5"><img src="./images/main5.jpg" alt=""></div>
+                <div class="swiper-slide bnr6"><img src="./images/main6.jpg" alt=""></div>
             </div>
             <div class="swiper-button-next"><img src="./images/bnr_btn.png" alt=""></div>
             <div class="swiper-button-prev"><img src="./images/bnr_btn.png" alt=""></div>
@@ -78,7 +86,7 @@
                     </a>
                 </div>
                 <div class="menu_list">
-                    <a href="#" class="menu_item_bold">간펀식</a>
+                    <a href="#" class="menu_item_bold">간편식</a>
                     <a href="#">간식</a>
                     <a href="#">유제품</a>
                     <a href="#">베이커리</a>
@@ -96,7 +104,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -122,7 +130,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -148,7 +156,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -174,7 +182,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -200,7 +208,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -226,7 +234,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -252,7 +260,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -278,7 +286,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -304,7 +312,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -330,7 +338,7 @@
                                         <p class="name">소불고기전골</p>
                                         <div class="price_wrap">
                                             <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="sale_p">11,900원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -385,19 +393,19 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">비비드키친</p>
+                                        <p class="name">저당 닭가슴살 브리또 3종 2개입 (택1)</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="origin_p">7,800원</span>
+                                            <span class="sale_p">6,420원</span>
+                                            <span class="rate">20%</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
-                                        <div class="review">
+                                        <!-- <div class="review">
                                             <img src="./images/review.png" alt="리뷰 이모티콘">
                                             <span class="review_num">999+</span>
-                                        </div>
+                                        </div> -->
                                         <div class="coupons">
                                             <span>5천원 쿠폰</span>
                                             <span>10% 쿠폰</span>
@@ -411,11 +419,11 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">먹쉬돈나</p>
+                                        <p class="name">부대떡볶이 3인분</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
+                                            <span class="origin_p">8,500원</span>
+                                            <span class="sale_p">6,375원</span>
                                             <span class="rate">25%</span>
                                         </div>
                                     </div>
@@ -437,12 +445,12 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">구씨반가X중앙해장</p>
+                                        <p class="name">한우곱창전골</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="origin_p">15,980원</span>
+                                            <span class="sale_p">13,580원</span>
+                                            <span class="rate">15%</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
@@ -463,23 +471,23 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">NEW!</p>
+                                        <p class="name">3월 신상간식 4종(택1)</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="origin_p">2,980원</span>
+                                            <span class="sale_p">2,680원</span>
+                                            <span class="rate">10%</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
                                         <div class="review">
                                             <img src="./images/review.png" alt="리뷰 이모티콘">
-                                            <span class="review_num">999+</span>
+                                            <span class="review_num">86</span>
                                         </div>
-                                        <div class="coupons">
+                                        <!-- <div class="coupons">
                                             <span>5천원 쿠폰</span>
                                             <span>10% 쿠폰</span>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </a>
@@ -489,12 +497,12 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">포트'럭</p>
+                                        <p class="name">국산 손질 생새우살 2종 (택1) (냉동)</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="origin_p">8,990원</span>
+                                            <span class="sale_p">7,490원</span>
+                                            <span class="rate">16%</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
@@ -515,12 +523,12 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">호주산</p>
+                                        <p class="name">스위트 사파이어 포도 500g</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="origin_p">11,900원</span>
+                                            <span class="sale_p">7,990원</span>
+                                            <span class="rate">32%</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
@@ -541,12 +549,10 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">피터루거</p>
+                                        <p class="name">스테이크 소스 714ml</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="sale_p">17,900원</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
@@ -567,23 +573,23 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">몽샹디저트</p>
+                                        <p class="name">쫀득딸기누가쿠키 2종(4개입/6개입) (택1)</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="origin_p">24,000원</span>
+                                            <span class="sale_p">22,300원</span>
+                                            <span class="rate">7%</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
                                         <div class="review">
                                             <img src="./images/review.png" alt="리뷰 이모티콘">
-                                            <span class="review_num">999+</span>
+                                            <span class="review_num">23</span>
                                         </div>
-                                        <div class="coupons">
+                                        <!-- <div class="coupons">
                                             <span>5천원 쿠폰</span>
                                             <span>10% 쿠폰</span>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </a>
@@ -593,18 +599,16 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">프레스코발디</p>
+                                        <p class="name">라우데미오 엑스트라 버진 올리브 오일 500mL</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="sale_p">79,000원</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
                                         <div class="review">
                                             <img src="./images/review.png" alt="리뷰 이모티콘">
-                                            <span class="review_num">999+</span>
+                                            <span class="review_num">14</span>
                                         </div>
                                         <div class="coupons">
                                             <span>5천원 쿠폰</span>
@@ -619,23 +623,23 @@
                                 <div class="item_img"><!-- 백그라운드2개 --></div>
                                 <div class="item_info">
                                     <div class="top_info">
-                                        <p class="company">사리원</p>
-                                        <p class="name">소불고기전골</p>
+                                        <p class="company">몽샹디저트</p>
+                                        <p class="name">쫀득딸기누가쿠키 2종(4개입/6개입) (택1)</p>
                                         <div class="price_wrap">
-                                            <span class="origin_p">15,000원</span>
-                                            <span class="slae_p">11,900원</span>
-                                            <span class="rate">25%</span>
+                                            <span class="origin_p">24,000원</span>
+                                            <span class="sale_p">22,300원</span>
+                                            <span class="rate">7%</span>
                                         </div>
                                     </div>
                                     <div class="bottom_info">
                                         <div class="review">
                                             <img src="./images/review.png" alt="리뷰 이모티콘">
-                                            <span class="review_num">999+</span>
+                                            <span class="review_num">23</span>
                                         </div>
-                                        <div class="coupons">
+                                        <!-- <div class="coupons">
                                             <span>5천원 쿠폰</span>
                                             <span>10% 쿠폰</span>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </a>
@@ -665,7 +669,7 @@
                             <p class="title">반짝 일일 특가</p>
                             <p class="plus_contents">하루만 할인하는 컬리 특가</p>
                             <div class="remain_time">
-                                <img src="./images/" alt="">
+                                <img src="./images/clock.png" alt="">
                                 <span class="time">00:00:00</span>
                             </div>
                         </div>
@@ -1038,12 +1042,13 @@
                             <div class="img_second"></div>
                         </div>
                     </div>
-                    <!-- nav 넣기 -->
+                    <!-- 바 -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </div>
         <!-- 8. 이 상품 어때요 / 얜 swiper XX -->
-        <div class="container rcm_peoduct_wrap">
+        <div class="container rcm_product_wrap">
             <div class="contents">
                 <div class="box box1">
                     <div class="rcm_info_txt">
@@ -1056,11 +1061,21 @@
                         <a href="#" class="next_btn"><img src="./images/bnr_btn.png" alt=""></a>
                     </div>
                 </div>
-                <div class="box box2"></div>
-                <div class="box box3"></div>
-                <div class="box box4"></div>
-                <div class="box box5"></div>
-                <div class="box box6"></div>
+                <div class="box box2">
+                    <div class="item_hover">메추리알 소이카츠 <img src="./images/ai_arrow.png" alt=""></div>
+                </div>
+                <div class="box box3">
+                    <div class="item_hover">메추리알 소이카츠 <img src="./images/ai_arrow.png" alt=""></div>
+                </div>
+                <div class="box box4">
+                    <div class="item_hover">메추리알 소이카츠 <img src="./images/ai_arrow.png" alt=""></div>
+                </div>
+                <div class="box box5">
+                    <div class="item_hover">메추리알 소이카츠 <img src="./images/ai_arrow.png" alt=""></div>
+                </div>
+                <div class="box box6">
+                    <div class="item_hover">메추리알 소이카츠 <img src="./images/ai_arrow.png" alt=""></div>
+                </div>
                 <div class="box big_box">
                     <div class="img_k"><img src="./images/logo_suggest.png" alt=""></div>
                     <p class="title_k">AI 알고리즘으로 맞춤 상품을 제공해 드려요</p>
@@ -1076,15 +1091,15 @@
         <div class="top_footer">
             <div class="contents">
                 <a href="#">컬리소개</a>
-                <img src="./images/footer_arrow.png" alt="">
+                <img src="./images/footer_grey_line2.png" alt="">
                 <a href="#">컬리소개영상</a>
-                <img src="./images/footer_arrow.png" alt="">
+                <img src="./images/footer_grey_line2.png" alt="">
                 <a href="#">투자정보</a>
-                <img src="./images/footer_arrow.png" alt="">
+                <img src="./images/footer_grey_line2.png" alt="">
                 <a href="#">이용약관</a>
-                <img src="./images/footer_arrow.png" alt="">
+                <img src="./images/footer_grey_line2.png" alt="">
                 <a href="#">개인정보처리방침</a>
-                <img src="./images/footer_arrow.png" alt="">
+                <img src="./images/footer_grey_line2.png" alt="">
                 <a href="#">이용안내</a>
             </div>
         </div>
@@ -1132,11 +1147,11 @@
                 <div class="sns_container">
                     <span class="sns_txt">KURLY.COM</span>
                     <span class="sns_box">
-                        <a href="#"><img src="/images/instagram.png" alt=""></a>
-                        <a href="#"><img src="/images/naver.png" alt=""></a>
-                        <a href="#"><img src="/images/youtube.png" alt=""></a>
-                        <a href="#"><img src="/images/blog.png" alt=""></a>
-                        <a href="#"><img src="/images/facebook.png" alt=""></a>
+                        <a href="#"><img src="./images/instagram.png" alt=""></a>
+                        <a href="#"><img src="./images/naver.png" alt=""></a>
+                        <a href="#"><img src="./images/youtube.png" alt=""></a>
+                        <a href="#"><img src="./images/blog.png" alt=""></a>
+                        <a href="#"><img src="./images/facebook.png" alt=""></a>
                     </span>
                 </div>
             </div>

@@ -1,0 +1,194 @@
+/* 공통 */
+body {
+    background-color: #fdfdfd;
+}
+body * {
+    letter-spacing: -0.02rem;
+    color: #222;
+}
+body > * {}
+main .container {
+    width: 100%; 
+    margin-bottom: 120px;
+}
+main .container .contents {
+    max-width: 1280px; margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+    margin-bottom: 25px;
+}
+header .top_header {
+    background-color: #EAE7F2;
+    height: 35px; width: 100%;
+}
+header .top_header .contents {
+    max-width: 1280px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+
+}
+header .top_header .header_txt_move {
+    font-size: 0.72rem; line-height: 35px;
+    letter-spacing: 0.18rem; font-weight: 500;
+}
+header .top_header ul {
+    display: flex;
+}
+header .top_header ul li {margin-right: 20px;}
+header .top_header ul li:hover a {color: #5A017C;}
+header .top_header ul li a {
+    font-size: 0.72rem; line-height: 35px;
+}
+header .bottom_header {
+    height: 99px;
+    width: 100%;
+}
+header .bottom_header .contents {
+    padding-top: 10px;
+    max-width: 1280px; height: 100%; margin: 0 auto;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+header .bottom_header .contents .top {
+    display: flex; align-items: center;
+}
+header .bottom_header .contents .top h1 {
+    margin-right: 30px;
+    width: 106px; height: 50px;
+}
+header .bottom_header .contents .top h1 > a {display: block;}
+header .bottom_header .contents .top h1 > a img {width: 100%;}
+header .bottom_header .contents .top .select_market {
+    display: flex; align-items: center;
+}
+header .bottom_header .contents .top .select_market a {
+    font-size: 0.94rem; font-weight: 500;
+}
+header .bottom_header .contents .top .select_market a:first-child {
+    color: #5A017C;
+}
+header .bottom_header .contents .top .select_market img {}
+header .bottom_header .contents .bottom {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+}
+header .bottom_header .contents .bottom nav {
+    display: flex; align-items: center;
+}
+header .bottom_header .contents .bottom nav > * {
+    margin-right: 26px; font-size: 0.90rem;
+}
+header .bottom_header .contents .bottom nav > *:last-child {
+    margin-right: 0;
+}
+header .bottom_header .contents .bottom nav > img {
+    cursor: pointer;
+}
+header .bottom_header .contents .bottom nav .star_delivery {
+    
+}
+header .bottom_header .contents .bottom nav .star_delivery img {
+    width: 18px; position: relative; top: 2px;
+}
+header .bottom_header .contents .bottom nav a {}
+header .bottom_header .contents .bottom nav a:hover {
+    color: #5A017C; font-weight: 600;
+}
+header .bottom_header .contents .bottom .customer_service {
+    display: flex; align-items: center;
+}
+header .bottom_header .contents .bottom .customer_service > * {
+    margin-right: 16px;
+}
+header .bottom_header .contents .bottom .customer_service form {
+    position: relative;
+}
+header .bottom_header .contents .bottom .customer_service form input {
+    width: 270px; height: 34px;
+    border-radius: 18px; border: 1px solid #8A8A8A;
+    padding: 0 17px;
+}
+header .bottom_header .contents .bottom .customer_service form input::placeholder {
+    font-size: 0.75rem; color: #8A8A8A;
+    position: relative; top: -2px;
+}
+header .bottom_header .contents .bottom .customer_service form button {
+}
+header .bottom_header .contents .bottom .customer_service form button img {
+    position: absolute; top: 7px; right: 20px;
+}
+header .bottom_header .contents .bottom .customer_service a {
+}
+header .bottom_header .contents .bottom .customer_service a:last-child {margin-right: 0;}
+header .bottom_header .contents .bottom .customer_service a img {}
+
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info {
+}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info {
+    padding-top: 7px;
+    margin-bottom: 18px;
+}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info p {}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info .company {
+    margin-bottom: 10px;
+    font-size: 0.75rem; font-weight: 700;
+    color: #8A8A8A;
+}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info .name {
+    margin-bottom: 11px;
+    font-size: 0.94rem; font-weight: 500;
+}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info .price_wrap {}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info .price_wrap span {}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info .price_wrap .origin_p {
+    margin-right: 6px;
+    font-size: 0.81rem;
+    color: #8A8A8A; text-decoration: line-through;
+}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info .price_wrap .sale_p {
+    margin-right: 8px;
+    font-size: 0.96rem; font-weight: 700;
+}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .top_info .price_wrap .rate {
+    font-size: 0.96rem; font-weight: 700;
+    color: #E79523;
+}
+/* 리뷰랑 쿠폰 */
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .bottom_info {}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .bottom_info .review {display: flex; align-items: center; margin-bottom: 7px;}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .bottom_info .review img {}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .bottom_info .review .review_num {
+    margin-left: 4px; font-size: 0.79rem;
+}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .bottom_info .coupons {display: flex; align-items: center;}
+main .container .contents .swiper-wrapper .swiper-slide > a .item_info .bottom_info .coupons span {
+    padding: 3px 4px; background-color: #DADADA; margin-right: 10px; font-size: 0.63rem;
+}
+
+/* 호버시-ai */
+main .rcm_peoduct_wrap .contents .box {
+    position: relative;
+}
+main .rcm_peoduct_wrap .contents .box::after {
+    display: block; position: absolute; top: 0; left: 0;
+    content: ''; width: 100%; height: 100%;
+    z-index: 998;
+    transition: background-color 0.2s ease-in;
+}
+main .rcm_peoduct_wrap .contents .box:hover::after {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+main .rcm_peoduct_wrap .contents .box .item_hover {
+    opacity: 0; color: #fff;
+    font-weight: 500;
+    display: flex; align-items: center;
+    transition: opacity 0.4s linear;
+    position: absolute; bottom: 30px; right: 22px;
+}
+main .rcm_peoduct_wrap .contents .box:hover .item_hover {
+    z-index: 999;
+    opacity: 1;
+}
+main .rcm_peoduct_wrap .contents .box .item_hover img {
+    margin-right: 3px;
+}
